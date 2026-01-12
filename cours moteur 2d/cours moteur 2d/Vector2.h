@@ -7,6 +7,7 @@ private:
 
 public:
 	Vector2();
+	Vector2(float x, float y);
 
 	float GetX() const;
 	void SetX(const float& newX);

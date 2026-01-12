@@ -2,7 +2,7 @@
 #include "Entity.h"
 #include "Alive.h"
 
-class BreakableObject : Entity, Alive
+class BreakableObject : public Entity, public Alive
 {
 public:
 	BreakableObject(float x, float y, float currentHealth, float maxHealth);

@@ -2,8 +2,9 @@
 #include <iostream>
 
 Mob::Mob(float x, float y, float currentHealth, float maxHealth, Vector2 direction, float speed) :
-	Entity(x, y), Alive(currentHealth, maxHealth), AMovable(direction, speed) {
-	std::cout << "Mob just created at x = " << x << " and y = " << y << " with " << currentHealth << "life with direction x = " << direction.GetX() << " and y = " << direction.GetY() << std::endl;
+	Entity(x, y), Alive(currentHealth, maxHealth), AMovable(direction, speed)
+{
+	std::cout << "Mob just created at x = " << x << " and y = " << y << " with " << currentHealth << " life with direction x = " << direction.GetX() << " and y = " << direction.GetY() << std::endl;
 }
 
 void Mob::TakeDamage(float amount)
@@ -24,5 +25,7 @@ void Mob::Move()
 	pos.SetX(pos.GetX() + GetDirection().GetX() * GetSpeed());
 	pos.SetY(pos.GetY() + GetDirection().GetY() * GetSpeed());
 
-	std::cout << "Mob move to x = " << GetPosition().GetX() << " and y = " << GetPosition().GetY() << std::endl;
+	SetPosition(pos);
+
+	std::cout << "Mob moved to x = " << GetPosition().GetX() << " and y = " << GetPosition().GetY() << std::endl;
 }

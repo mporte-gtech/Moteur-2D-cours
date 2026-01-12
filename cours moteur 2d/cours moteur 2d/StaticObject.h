@@ -1,7 +1,7 @@
 #pragma once
 #include "Entity.h"
 
-class StaticObject : Entity
+class StaticObject : public Entity
 {
 public:
 	StaticObject(float x, float y);
