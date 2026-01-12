@@ -21,10 +21,8 @@ void Mob::Move()
 	int x = pos.GetX();
 	int y = pos.GetY();
 
-	pos.SetX(pos.GetX() + );
-	pos.SetY();
-
-	SetPosition();
+	pos.SetX(pos.GetX() + GetDirection().GetX() * GetSpeed());
+	pos.SetY(pos.GetY() + GetDirection().GetY() * GetSpeed());
 
 	std::cout << "Mob move to x = " << GetPosition().GetX() << " and y = " << GetPosition().GetY() << std::endl;
 }

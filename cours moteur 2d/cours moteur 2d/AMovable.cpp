@@ -20,7 +20,7 @@ void AMovable::SetDirection(const Vector2& newDirection)
 	direction.SetY(newDirection.GetY() / distance);
 }
 
-Vector2& AMovable::GetDirection(const Vector2& newDirection)
+Vector2& AMovable::GetDirection()
 {
 	return direction;
 }
@@ -28,4 +28,9 @@ Vector2& AMovable::GetDirection(const Vector2& newDirection)
 void AMovable::SetSpeed(const float& newSpeed)
 {
 	speed = newSpeed;
+}
+
+float AMovable::GetSpeed()
+{
+	return speed;
 }
