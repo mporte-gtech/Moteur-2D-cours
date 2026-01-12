@@ -9,7 +9,7 @@ BreakableObject::BreakableObject(float x, float y, float currentHealth, float ma
 
 void BreakableObject::TakeDamage(float amount)
 {
-	currentHealth = fmax(0, currentHealth - amount);
+	SetCurrentHealth(fmax(0, GetCurrentHealth() - amount));
 
 	std::cout << "Breakable Object just broke" << std::endl;
 }
