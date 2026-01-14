@@ -1,8 +1,18 @@
 #include <iostream>
 #include "World.h"
+#include "Pair.h"
 
 int main()
 {
+	/*
+	std::vector<int> table;
+
+	Pair<int, std::string> pairTest(42, "coucou");
+
+	std::cout << pairTest.GetFirstValue() << std::endl;
+	*/
+
+	/*
 	World world = World();
 
 	world.InitWorld();
@@ -13,6 +23,7 @@ int main()
 	{
 		exit = world.Step();
 	}
+	*/
 
 	return 0;
 }

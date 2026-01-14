@@ -20,7 +20,7 @@ public:
 template<typename T, typename U>
 inline T Pair<T, U>::GetFirstValue()
 {
-	return T();
+	return t;
 }
 
 template<typename T, typename U>
@@ -32,7 +32,7 @@ inline void Pair<T, U>::SetFirstValue(T newFirstValue)
 template<typename T, typename U>
 inline U Pair<T, U>::GetSecondValue()
 {
-	return U();
+	return u;
 }
 
 template<typename T, typename U>

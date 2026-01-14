@@ -129,11 +129,13 @@
     <ClCompile Include="cours moteur 2d.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="IAttacker.cpp" />
+    <ClCompile Include="Iterator.cpp" />
     <ClCompile Include="Mob.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Pair.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="StaticObject.cpp" />
+    <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -143,11 +145,13 @@
     <ClInclude Include="BreakableObject.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="IAttacker.h" />
+    <ClInclude Include="Iterator.h" />
     <ClInclude Include="Mob.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Pair.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="StaticObject.h" />
+    <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
