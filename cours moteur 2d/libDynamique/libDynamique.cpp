@@ -1,6 +1,12 @@
 #include <iostream>
+#include "libDynamique.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+}
+
+void PrintBleh()
+{
+    std::cout << "Bleh";
 }

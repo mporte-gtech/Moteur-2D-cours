@@ -1,6 +1,8 @@
 #include <iostream>
 #include "World.h"
 #include "Pair.h"
+//#include <staticlib>
+
 
 int main()
 {
